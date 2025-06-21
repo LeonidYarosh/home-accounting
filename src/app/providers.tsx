@@ -1,10 +1,16 @@
 'use client'
-import {HeroUIProvider} from '@heroui/react'
+import { CssBaseline, ThemeProvider } from '@mui/material'
+
+import {AppProvider} from '@toolpad/core'
+import theme from '@/theme'
 
 export function Providers({children}: { children: React.ReactNode }) {
   return (
-    <HeroUIProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+    <AppProvider>
       {children}
-    </HeroUIProvider>
+    </AppProvider>
+    </ThemeProvider>
   )
 }

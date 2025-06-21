@@ -1,4 +1,3 @@
-import {heroui} from "@heroui/react";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
@@ -11,7 +10,7 @@ const config = {
         extend: {},
     },
     darkMode: "class",
-    plugins: [heroui()]
+    plugins: []
 }
 
 export default config;
